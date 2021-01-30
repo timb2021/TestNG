@@ -20,7 +20,7 @@ public class StringManipulationMethodsTest {
     public void testReturnInitialsInCaps2() {
 
         StringManipulationMethods str = new StringManipulationMethods();
-        String name = "tim balaban";
+        String name = "tom bill";
 
         String actualResult = str.returnInitialsInCaps(name);
         String expectedResult = "TB";
