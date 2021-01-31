@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="TestNG suite" >       <!-- we can add option  <suite name="TestNG suite", time-out="2000" >  -->
+
+    <test name="SeleniumTests2">
+        <parameter name="input1" value="33"></parameter>
+        <parameter name="input2" value="25"></parameter>
+        <parameter name="username1" value="Jessica"></parameter>
+        <groups>
+            <run>
+                <include name="group1"></include>
+            </run>
+        </groups>
+
+        <classes>
+            <class name="SeleniumTests2">
+            </class>
+        </classes>
+    </test>
+</suite>
+
+
+
+
+<!--    <test name="SeleniumTests">-->
+<!--        <parameter name="input1" value="33"></parameter>-->
+<!--        <parameter name="input2" value="25"></parameter>-->
+<!--        <parameter name="username1" value="Jessica"></parameter>-->
+<!--        <classes>-->
+<!--            <class name="RawTests">-->
+<!--                <methods>-->
+<!--                    &lt;!&ndash;   <exclude name="invocationCountTest2"></exclude>  &ndash;&gt;-->
+<!--                      <include name="invocationCountTest"></include>-->
+<!--                  </methods>-->
+<!--              </class>-->
+<!--              <class name="BasicMathTest"></class>-->
+
+<!--            <class name="SeleniumTests">-->
+<!--                <methods>-->
+<!--                    <include name="parameterTest"/>-->
+<!--                    <include name="parameterTest2"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--          </classes>-->
+<!--      </test>-->
