@@ -94,13 +94,13 @@ public class StringManipulationMethodsTest {
 
     }
 
-//    @Test
-//    public void returnInitialsInCaps8(){
-//        StringManipulationMethods str = new StringManipulationMethods();
-//        String testData = "Robert 555 Downey";
-//        String expected = "RD";
-//        String actual = str.returnInitialsInCaps(testData);
-//        Assert.assertEquals(actual, expected);
-//    }
+    @Test
+    public void returnInitialsInCaps8() {
+        StringManipulationMethods str = new StringManipulationMethods();
+        String testData = "Robert 555 Downey";
+        String expected = "RD";
+        String actual = str.returnInitialsInCaps(testData);
+        Assert.assertEquals(actual, expected);
+    }
 
 }

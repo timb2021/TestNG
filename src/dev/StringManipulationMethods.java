@@ -9,12 +9,12 @@ public class StringManipulationMethods {
         String emptyStr = "";
 
         if (s.length() != 0) {
+
             for (int i = 0; i < arr.length; i++) {
                 emptyStr += arr[i].toUpperCase().substring(0, 1);
             }
-
         }
 
-        return emptyStr;
+        return emptyStr.replaceAll("[^A-z]", "");  // replaceAll("[^A-z]", "") - remove all digits from string.
     }
 }
